@@ -1,7 +1,7 @@
 const { firestore } = require("../firebase/fire");
 
 const uuid = require("uuid");
-exports.save_search = async (user_id, place, coordinates) => {
+export async function save_search (user_id, place, coordinates){
   let content_ref = firestore
     .collection("users")
     .doc(user_id)
@@ -14,7 +14,7 @@ exports.save_search = async (user_id, place, coordinates) => {
 };
 
 
-exports.get_saved= async(user_id)=>{
+export async function get_saved(user_id){
   let content_ref = firestore
   .collection("users")
   .doc(user_id)
