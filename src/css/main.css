@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .gmap{
+      width:100%;
+      height: 100vh;
+  }
+  .top_part{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 30px;
+      left: 0;
+      height: 150px;
+      background-color: transparent;
+      z-index:10;
+      width: 100%;
+  }
+  .time{
+      margin-left: 20px;
+      background-color: rgba(14, 2, 0, 0.24);
+      backdrop-filter: blur(5px);
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px 10px;
+      box-shadow:1px 1px 10px rgba(58, 12, 4, 0.473);
+  }
+  .now{
+      color: tomato;
+      font-size: 50px;
+  }
+  .today{
+      color:#fff;
+      font-size: small;
+  }
+  .search_wrapper input{
+      height:40px;
+      border:0;
+      text-align: center;
+      width: 250px;
+      padding: 4px;
+      border-radius: 6px;
+      box-shadow:1px 1px 10px rgba(58, 12, 4, 0.473);
+
+  }
+  input:focus{
+      outline: none;
+  }
+  .cityWrapper{
+      text-align: center;
+      margin-right: 30px;
+      padding: 20px ;
+      background-color: rgb(212, 209, 209);
+      border-radius: 10px;
+      box-shadow:1px 1px 10px rgba(58, 12, 4, 0.473);
+
+  }
+  .ctname{
+
+    color: tomato;
+    font-size: 30px; 
+  }
+  .lat_lng{
+      font-size: small;
+  }
+  .btn{
+      cursor: pointer;
+      border:0;
+      padding:10px 20px;
+      border-radius: 10px;
+      background-color: tomato;
+      color: #fff;
+  }
+  .btn:focus{
+      outline: none;
+  }
+  .overlay_wrapper{
+      position: absolute;
+      top:-200px;
+      left: 40px;
+      background-color: rgb(212, 209, 209);
+      padding: 10px;
+      box-shadow:1px 1px 10px rgba(58, 12, 4, 0.473);
+      border-radius: 10px;
+      width:110px;
+      font-size: small;
+  }
+  .title{
+    color: tomato;
+    font-size: 15px; 
+  }
+  .overlay_wrapper .btn{
+      padding: 5px 20px;
+  }
+  .bd{
+      text-align: center;
+  }
+  .details span{
+      color: tomato;
+  }
+  .the_marker{
+      height: 40px;
+      
+      transform: translateY(-40px);
+  }
+  .the_weather{
+      color: green;
+      font-weight: bold;
+  }
+  .overlay{
+      position: relative;
+  }
+  .weth_icon{
+      height: 50px;
+  }
+   .weth_icon2{
+    height: 50px;
+}
