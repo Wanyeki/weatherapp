@@ -107,8 +107,8 @@ class Main extends Component {
         <div className="top_part">
           <Time />
           <Search search_city={this.search_city} />
-          { this.state.weather.main ?  <CityName weather={this.state.weather} get_saved={this.get_saved}  /> : <div className="emo"> </div>
-          }
+           <CityName weather={this.state.weather} get_saved={this.get_saved}  /> 
+          
         </div>
         <GMap
           coordinates={this.state.coordinates}
